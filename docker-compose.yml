@@ -1,0 +1,49 @@
+version: '3'
+services:
+  banco:
+    image: postgres
+    container_name: banco
+    restart: always
+    ports:
+      - 2345:5432
+    env_file:
+      - ./spotimaps-backend/.env
+    volumes:
+      - volume_banco:/var/lib/postgresql/data
+
+  app_node:
+    build: ./spotimaps-backend
+    container_name: app_node
+    ports:
+      - 5000:5000
+    env_file:
+      - ./spotimaps-backend/.env
+    volumes:
+      - ./spotimaps-backend:/urs/src
+      - /usr/src/node_modules
+    entrypoint: dockerize -wait tcp://banco:5432 -timeout 20s docker-entrypoint.sh
+    command: "npm run dev:migrate"
+    depends_on:
+      - banco
+  
+  app_react:
+    build: ./spotimaps-frontend
+    container_name: app_react
+    volumes:
+      - build_react:/var/www/html
+    depends_on:
+      - app_node
+    
+  nginx:
+    build: ./nginx
+    container_name: nginx
+    ports:
+      - 4000:4000
+    volumes:
+      - build_react:/var/www/html
+    depends_on:
+      - app_react
+
+volumes:
+  build_react:
+  volume_banco:
