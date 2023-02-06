@@ -41,10 +41,13 @@ Next features to be implemented:
 ![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Spotify](https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white)
 
+# Attention
+
+This project dont have a deploy, but soon it will have an AWS server running. But its possible to run it locally by:
+
 # Getting started with Docker
 
-This project was bootstrapped with ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white) 
-and it dont have an AWS server running yet. If you have docker installed, you can run it by cloning this repository and run:
+This project was bootstrapped with ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white). If you have docker installed, you can run it by cloning this repository and run:
 
 ### `docker-compose up --build`
 
