@@ -2,6 +2,8 @@
 
 Spotimaps is an easy randon playlist maker, that create a playlist based on what you want to hear and how much time you have to make a choosen path.
 
+![Spotimaps](https://i.imgur.com/DecfSxP.gif)
+
 ### More info and content will be added and updated.
 
 # About
