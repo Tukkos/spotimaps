@@ -6,7 +6,7 @@ Spotimaps is an easy randon playlist maker, that create a playlist based on what
 
 ### More info and content will be added and updated.
 
-# About
+## About
 
 This is a full-stack web app project to easily create randon playlists. The implemented features are:
 
@@ -23,7 +23,7 @@ Next features to be implemented:
 * Spotify API to change artists you want to make a randon playlist;
 * Google Maps API so it calculates route time based on where you want to go;
 
-# Technologies
+## Technologies
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -43,11 +43,11 @@ Next features to be implemented:
 ![AWS](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
 ![Spotify](https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white)
 
-# Attention
+## Attention
 
 This project dont have a deploy, but soon it will have an AWS server running. But its possible to run it locally by:
 
-# Getting started with Docker
+## Getting started with Docker
 
 This project was bootstrapped with ![Docker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white). If you have docker installed, you can run it by cloning this repository and run:
 
@@ -57,7 +57,7 @@ and after you can delete the container with:
 
 ### `docker-compose down -v`
 
-# Getting Started with npm
+## Getting Started with npm
 
 First clone frontend repository and run:
 
